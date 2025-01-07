@@ -1,0 +1,11 @@
+import random
+def lanciodado(numerodado):
+  somma=0
+  for n in range(numerodado):
+    dado=random.randint(1,6)
+    print(f"dado  {n+1} è:  {dado}")
+    somma+=dado
+  return somma
+numero_dadi=int(input("quanti dadi vuoi lanciare?"))
+risultato= lanciodado(numero_dadi)
+print (f"quindi il risultato del lancio è: {risultato}")
